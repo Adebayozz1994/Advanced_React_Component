@@ -11,14 +11,12 @@ const Home = () => {
   })
 
   const [editTask, setEditTask] = useState(null)
-const [darkMode, setDarkMode] = useState(() => {
-  const saved = localStorage.getItem('theme')
-  if (saved) return saved === 'dark'
-  return window.matchMedia('(prefers-color-scheme: dark)').matches
-})
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem('theme')
+    if (saved) return saved === 'dark'
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+  })
 
-
-  // Toggle dark mode
   const toggleDarkMode = () => {
     const newTheme = !darkMode
     setDarkMode(newTheme)
@@ -31,7 +29,6 @@ const [darkMode, setDarkMode] = useState(() => {
   }, [state])
 
   useEffect(() => {
-    // Apply saved theme on mount
     if (darkMode) {
       document.documentElement.classList.add('dark')
     } else {
@@ -44,12 +41,14 @@ const [darkMode, setDarkMode] = useState(() => {
   }
 
   return (
-    <div className="min-h-screen p-4 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-3xl font-bold text-center w-full">Task Management Dashboard</h1>
+    <div className="min-h-screen p-4 sm:p-6 md:p-8 bg-gray-100 dark:bg-gray-900 text-black dark:text-white transition">
+      <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+        <h1 className="text-2xl sm:text-3xl font-bold text-center sm:text-left">
+          Task Management Dashboard
+        </h1>
         <button
           onClick={toggleDarkMode}
-          className="absolute top-4 right-4 bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded text-sm"
+          className="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded text-sm"
         >
           {darkMode ? 'Light Mode' : 'Dark Mode'}
         </button>

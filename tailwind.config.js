@@ -13,7 +13,12 @@ export default {
 
   theme: {
 
-    extend: {},
+    extend: {
+         colors: {
+      'form-light': '#ffffff',
+      'form-dark': '#1f2937', 
+    },
+    },
 
   },
 

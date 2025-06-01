@@ -90,7 +90,7 @@ Clone the repo
 bash
 Copy
 Edit
-git clone https://github.com/Adebayozz1994/Advanced-React-Component
+git clone https://github.com/Adebayozz1994/Advanced_React_Component
 cd task-dashboard
 Install dependencies
 
