@@ -18,6 +18,7 @@ const TaskTable = ({ state, dispatch, onEdit }) => {
       <table className="w-full border rounded-lg mt-4 text-sm sm:text-base">
         <thead>
           <tr className="bg-gray-200 dark:bg-gray-800 text-left">
+            <th className="p-2">S/N</th>
             <th className="p-2">Title</th>
             <th className="p-2">Description</th>
             <th className="p-2">Priority</th>
@@ -26,8 +27,9 @@ const TaskTable = ({ state, dispatch, onEdit }) => {
           </tr>
         </thead>
         <tbody>
-          {filteredTasks.map((task) => (
+          {filteredTasks.map((task, index) => (
             <tr key={task.id} className="border-t dark:border-gray-700">
+              <td>{index + 1}</td>
               <td className="p-2">{task.title}</td>
               <td className="p-2">{task.description}</td>
               <td className="p-2">{task.priority}</td>
