@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
-📝 Task Management Dashboard
+                    📝 Task Management Dashboard
 A simple yet powerful task management app built with React. You can add, edit, delete, and filter tasks based on their status (Completed or Pending) and priority (High, Medium, Low). The app also stores your tasks in localStorage, so your data is saved between sessions.
 
 🚀 Features
@@ -90,7 +90,7 @@ Clone the repo
 bash
 Copy
 Edit
-git clone https://github.com/Adebayozz1994/Advanced_React_Component
+git clone: https://github.com/Adebayozz1994/Advanced_React_Component
 cd task-dashboard
 Install dependencies
 
@@ -106,9 +106,9 @@ Edit
 npm start
 Then go to http://localhost:5173 in your browser.
 
-🧑‍💻 Author
+🧑‍💻 Author:
 Made with ❤️ by Ogunlade Adebayo Peter
 Feel free to reach out or contribute!
 
-📄 License
+📄 License:
 This project is licensed under the MIT License.
